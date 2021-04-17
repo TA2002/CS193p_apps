@@ -13,7 +13,7 @@ func createCardContent(pairIndex: Int) -> String {
 }
 
 class EmojiMemoryGame: ObservableObject {
-    @Published private var theme: Theme
+    private var theme: Theme
     @Published private var model: MemoryGame<String> // only view model can view and change the model
     
     private static func createMemoryGame(_ theme: Theme) -> MemoryGame<String> { //

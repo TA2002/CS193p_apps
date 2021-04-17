@@ -10,7 +10,7 @@ import Foundation
 struct MemoryGame<CardValue> where CardValue: Equatable {
     private(set) var cards: Array<Card>
     private(set) var points: Int = 0
-    private(set) var failedCards: Set<Int> = Set<Int>()
+    private var failedCards: Set<Int> = Set<Int>()
     
     private var indexOfFaceUpCard: Int? {
         get {
